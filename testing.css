@@ -1,0 +1,419 @@
+:root{
+	--primary: #fa3d3b;
+	--secondary:#1c1c1c;
+	--white:#c6c6c6;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+
+/*Navigation Start*/
+#NavBar{
+    width: 100%;
+    display: flex;
+    background-color: var(--secondary);
+    box-shadow: 3px 3px 5px;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+#NavBar img{
+    width: 300px;
+    height:50px;
+    margin-left: 20px;
+}
+#LinkContainer a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 19px;
+    padding: 16px;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#LinkContainer a:hover{
+    cursor: pointer;
+    color: var(--white);
+}
+#BarBtn{
+    font-size:30px;
+    color:var(--white);
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#BarBtn:hover{
+    color: var(--primary);
+}
+#XBtn{
+    font-size: 30px;
+    color: var(--white);
+    display: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#DropDownLinks{
+    display: inline-block; 
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    right: 100%;
+    margin-top: 200px;
+}
+#DropDownLinks li{
+    list-style: none;
+    animation: 1s ease;
+}
+#DropDownLinks li a{
+    text-decoration: none;
+    background-color: rgba(28,28,28, 0.99);
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px; 
+    width: 100%;
+    color: var(--white);
+    font-weight: bold;
+    text-align:center;
+    padding: 5px;
+    border: 1px solid black;
+    display: block;
+}
+/*Navigation End*/
+
+/* front start */
+#Content{
+    width: 100%;
+    height:600px;
+    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url("background.jpg"), rgba(8,8,8, 0.90);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#Content h2{
+    font-size: 80px;
+    color: white;
+    padding-bottom: 5px;
+    transform: rotate(-3deg);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    width: 500px;
+    line-height: 0.75em;
+    margin-top: 150px;
+}
+#Content p{
+    font-size: 24px;
+    transform: rotate(-3deg);
+    color: var(--white);
+    margin-bottom:25px; 
+    margin-inline: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    display: block;
+    text-align: center;
+    max-width: 800px;
+    width: 80%;
+}
+#JoinBtn{
+    width: 200px;
+    height: 50px;
+    background-color: transparent;  
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+#JoinBtn:hover{
+    scale:105%;
+}
+
+/* GOALS START */
+#Goals{
+    width: 100%;
+    height: 830px;
+    overflow: hidden;
+    background: url("BarbellBackground.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    padding-top: 50px;
+  }
+  #SideImage{
+    background: url("AsideImage.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 40%;
+    height: 650px;
+    background-position: center;
+  }
+  #ContentContainer{
+    width: 55%;
+    height: 700px;
+    
+  }
+  #ContentContainer h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    color: var(--white);
+    margin-bottom: 10px;
+  }
+  #ContentContainer h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+ 
+  }
+  #ContentContainer p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    float: left; 
+    margin-bottom: 10px;
+  }
+  #GoalsContainers{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    float: left;
+  }
+  .Container{
+    width: 48%;
+    height: 150px;
+    margin: 0;
+    overflow: auto;
+  }
+  #GoalsContainers h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #GoalsContainers p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    color: var(--white);
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+/* GOALS END */
+
+/* SIGN UP START */
+#SignUp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(26,26,26);
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 25px;
+    color: var(--white);
+    margin-bottom: 5px;
+
+}
+input[type ="text"]{
+    width: 600px;
+    height: 28px;
+}
+input[type ="Date"], input[type ="number"]{
+    height: 28px;
+    width: 250px;
+}
+input + p{
+    color: red;
+    margin-bottom: 10px;
+    font-size: 12px;
+    visibility: hidden;
+}
+#AgeDate{
+    display: flex;
+    justify-content: space-between;
+}
+.AgeDateContainer{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 200px;
+    height: 30px;
+    margin: 30px auto 30px auto;
+    background-color: transparent;  
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+button:hover{
+    scale: 105%;
+}
+#SignUp h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin: 30px 0px 10px 0px;
+    font-size: 40px;
+}
+/* SIGN UP END */
+
+/* FOOTER START */
+footer{
+    width: 100%;
+    height: 160px;
+    background-color: #292929;
+}
+#FooterContainer{
+    width: 600px;
+    height: 96px;
+    border-bottom: 1px solid var(--white);
+    margin: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#FooterLinkContainer{
+    width: 275px;
+    height: 64px;
+    flex-flow: column;
+    display: flex;
+}
+#FooterLinkContainer a{
+    text-decoration: none;
+    color: var(--white);
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#FooterIconContainer{
+    width: 275px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+.SocMed{
+    font-size: 32px;
+    padding: 0 10px 0px 10px;
+}
+#FooterIconContainer a i{
+    color: var(--white);
+}
+#FooterIconContainer a i:hover,#FooterLinkContainer a:hover{
+    color: var(--primary);
+}
+#FooterContainer p{
+    text-align:center;
+    margin-top: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-inline: auto;
+    color: var(--white);
+}
+/* FOOTER END  */
+
+/*javascript classes*/
+#XBtn.fa-x.active {
+    display: inline-block;
+}
+#BarBtn.fa-bars.inactive{
+    display: none;
+}
+#XBtn.fa-x.inactive {
+    display: none;
+}
+#BarBtn.fa-bars.active {
+    display: inline-block;
+}
+#DropDownLinks.active{
+    display: inline-block;
+    transform: translateX(100%);
+}
+.rev{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.rev.act{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 600px){
+    #FooterContainer,#FooterLinkContainer,#FooterIconContainer{
+        width: 100%;
+    }
+    #FooterContainer{
+        height: 100%;
+    }
+    footer{
+        height: 240px;
+    }
+    #FooterIconContainer{
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 1065px){
+    #NavBar{
+        justify-content: space-between;
+    }
+    #LinkContainer{
+        display: none;
+    }#BarBtn{
+        display: inline-block;
+    }
+}
+@media only screen and (max-width: 615px){
+    #info{
+        box-sizing: border-box;
+        width: 85%;
+        margin: 5%;
+    }
+}
+@media only screen and (max-width: 644px){
+    form{
+        width: 90%;
+    }
+    input[type ="text"]{
+        width: 100%;
+    }
+    input[type ="Date"], input[type ="number"]{
+        width: 70%;
+    }
+    #AgeDate, .AgeDateContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    #SideImage{
+      display: none;
+    }
+    #ContentContainer{
+      width: 90%
+    }
+}
+@media only screen and (max-width: 504px){
+    #Content h2{
+        font-size: 40px;
+    }
+ }
